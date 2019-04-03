@@ -9,9 +9,9 @@
 import Foundation
 
 public protocol Persistable {
-    func save(at key: String, on type: PersistanceServiceType) throws
-    static func get(from key: String, on type: PersistanceServiceType) throws -> Self
-    static func delete(from key: String, on type: PersistanceServiceType) throws
+    func save(at key: String, on service: PersistanceService) throws
+    static func get(from key: String, on service: PersistanceService) throws -> Self
+    static func delete(from key: String, on service: PersistanceService) throws
     
     func toPersistableData() throws -> Data
     static func fromPersistableData(_ data: Data) throws -> Self
@@ -30,20 +30,36 @@ extension PredefinedPersistable {
 }
 
 extension Persistable {
+    public func save(at key: String, on service: PersistanceService) throws {
+        try service.save(self, at: key)
+    }
+    
     public func save(at key: String, on type: PersistanceServiceType) throws {
-        try type.persistanceService.save(self, at: key)
+        try self.save(at: key, on: type.persistanceService)
+    }
+    
+    public static func get(from key: String, on service: PersistanceService) throws -> Self {
+        return try service.get(Self.self, from: key)
     }
     
     public static func get(from key: String, on type: PersistanceServiceType) throws -> Self {
-        return try type.persistanceService.get(Self.self, from: key)
+        return try Self.get(from: key, on: type.persistanceService)
+    }
+    
+    public func delete(from key: String, on service: PersistanceService) throws {
+        try Self.delete(from: key, on: service)
     }
     
     public func delete(from key: String, on type: PersistanceServiceType) throws {
-        try Self.delete(from: key, on: type)
+        try delete(from: key, on: type.persistanceService)
+    }
+    
+    public static func delete(from key: String, on service: PersistanceService) throws {
+        try service.delete(key)
     }
     
     public static func delete(from key: String, on type: PersistanceServiceType) throws {
-        try type.persistanceService.delete(key)
+        try delete(from: key, on: type.persistanceService)
     }
 }
 
