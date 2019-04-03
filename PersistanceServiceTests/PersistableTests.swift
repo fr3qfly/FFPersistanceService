@@ -137,6 +137,20 @@ class PersistableTests: XCTestCase {
         result = try? sutType.get()
         XCTAssertNil(result)
     }
+    
+    func testKeychainPersistableOnUserDefaults() throws {
+        let expected = MockKeychainPersistable()
+        let sutType = MockKeychainPersistable.self
+        sut = expected
+        var result = try? sutType.get(from: key, on: .userDefaults)
+        XCTAssertNil(result)
+        try sut.save(at: key, on: .userDefaults)
+        result = try sutType.get(from: key, on: .userDefaults)
+        XCTAssertEqual(result, expected)
+        try sut.delete(from: key, on: .userDefaults)
+        result = try? sutType.get(from: key, on: .userDefaults)
+        XCTAssertNil(result)
+    }
 
 }
 
