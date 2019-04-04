@@ -20,7 +20,7 @@ let kSecMatchLimitOneValue = NSString(format: kSecMatchLimitOne)
 
 class SecureStorage: NSObject {
     enum KeychainError: Error {
-        case dataRetrieval(OSStatus)
+        case dataRetrieval(String)
         
         var localizedDescription: String {
             switch self {
@@ -59,7 +59,12 @@ class SecureStorage: NSObject {
         
         guard status == errSecSuccess,
             let data = storedItem as? NSData else {
-            throw KeychainError.dataRetrieval(status)
+                var message = "\(status)"
+                if #available(iOS 11.3, *) {
+                    let error = SecCopyErrorMessageString(status, nil)
+                    message = String(describing: error)
+                }
+            throw KeychainError.dataRetrieval(message)
         }
         return data as Data
     }

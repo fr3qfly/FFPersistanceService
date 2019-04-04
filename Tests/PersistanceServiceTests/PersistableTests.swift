@@ -176,4 +176,13 @@ class PersistableTests: XCTestCase {
         result = try? sutType.get(from: key, on: .userDefaults)
         XCTAssertNil(result)
     }
+    
+    func testEmptyValue() {
+        do {
+            _ = try MockKeychainPersistable.get()
+            XCTFail("Should have throw error")
+        } catch {
+            XCTAssertEqual("\(error)", "dataRetrieval(\"Optional(The specified item could not be found in the keychain.)\")")
+        }
+    }
 }
