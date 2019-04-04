@@ -164,5 +164,16 @@ class PersistableTests: XCTestCase {
         result = try? sutType.get(from: key, on: .userDefaults)
         XCTAssertNil(result)
     }
-
+    
+    func testEmptyArrayDeletesValueOnUserDefaults() throws {
+        var initial: [String] = ["1","2"]
+        let sutType = [String].self
+        try initial.save(at: key, on: .userDefaults)
+        var result: [String]? = try sutType.get(from: key, on: .userDefaults)
+        XCTAssertEqual(result, initial)
+        initial = []
+        try initial.save(at: key, on: .userDefaults)
+        result = try? sutType.get(from: key, on: .userDefaults)
+        XCTAssertNil(result)
+    }
 }
