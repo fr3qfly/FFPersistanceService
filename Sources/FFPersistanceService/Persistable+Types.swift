@@ -54,3 +54,13 @@ extension String: Persistable {
 extension Array: Persistable where Element: Codable {}
 
 extension Dictionary: Persistable where Value: Codable, Key: Codable {}
+
+extension Collection where Self: Persistable {
+    public func save(at key: String, on service: PersistanceService) throws {
+        guard !self.isEmpty else {
+            try service.delete(key)
+            return
+        }
+        try service.save(self, at: key)
+    }
+}

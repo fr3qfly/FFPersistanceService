@@ -75,11 +75,12 @@ extension Optional where Wrapped: Persistable {
         }
     }
     
-    func save(at key: String, on type: PersistanceServiceType) throws {
+    func save(at key: String, on service: PersistanceService) throws {
         guard let wrapped = self else {
-            throw PersistableError.nilSave
+            try Wrapped.delete(from: key, on: service)
+            return
         }
-        try wrapped.save(at: key, on: type)
+        try wrapped.save(at: key, on: service)
     }
     
     static func get(from key: String, on type: PersistanceServiceType) throws -> Wrapped? {
