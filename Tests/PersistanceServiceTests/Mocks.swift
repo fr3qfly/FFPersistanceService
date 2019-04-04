@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import PersistanceService
+import FFPersistanceService
 
 
 struct MockPersistable: Codable, Equatable, Persistable {

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import PersistanceService
+@testable import FFPersistanceService
 
 class UserDefaultsTests: XCTestCase {
     static let allTests = [
