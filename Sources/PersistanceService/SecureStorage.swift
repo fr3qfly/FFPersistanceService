@@ -1,5 +1,5 @@
 //
-//  Keychain.swift
+//  SecureStorage.swift
 //  PersistanceService
 //
 //  Created by Balazs Szamody on 3/4/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 import Security
-//
+
 let kSecClassValue = NSString(format: kSecClass)
 let kSecAttrAccountValue = NSString(format: kSecAttrAccount)
 let kSecValueDataValue = NSString(format: kSecValueData)
@@ -18,7 +18,7 @@ let kSecMatchLimitValue = NSString(format: kSecMatchLimit)
 let kSecReturnDataValue = NSString(format: kSecReturnData)
 let kSecMatchLimitOneValue = NSString(format: kSecMatchLimitOne)
 
-class Keychain: NSObject {
+class SecureStorage: NSObject {
     enum KeychainError: Error {
         case dataRetrieval(OSStatus)
         
@@ -36,7 +36,7 @@ class Keychain: NSObject {
         self.serviceName = serviceName as NSString
     }
     
-    static let shared: Keychain = Keychain(serviceName: Bundle.main.bundleIdentifier ?? "com.keychain.noname")
+    static let shared: SecureStorage = SecureStorage(serviceName: Bundle.main.bundleIdentifier ?? "com.keychain.noname")
     
     func save(data: Data, key: String) {
         let data = data as NSData

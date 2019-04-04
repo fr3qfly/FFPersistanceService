@@ -13,6 +13,19 @@ let kKeychainKey = "keychainKey"
 
 class PersistableTests: XCTestCase {
     
+    static let allTests = [
+        ("testStringOnUserDefaults", testStringOnUserDefaults),
+        ("testMockCodableOnUserDefaults", testMockCodableOnUserDefaults),
+        ("testMockCodableOnKeychain", testMockCodableOnKeychain),
+        ("testStringArrayOnKeychain", testStringArrayOnKeychain),
+        ("testIntArrayOnUserDefaults", testIntArrayOnUserDefaults),
+        ("testUserDefaultsPersistable", testUserDefaultsPersistable),
+        ("testKeychainPersistable", testKeychainPersistable),
+        ("testPersistanceKeyRepresentable", testPersistanceKeyRepresentable),
+        ("testKeychainPersistableOnUserDefaults", testKeychainPersistableOnUserDefaults)
+        
+    ]
+    
     let key = "key"
     
     var sut: Persistable!
@@ -21,8 +34,8 @@ class PersistableTests: XCTestCase {
 
     override func tearDown() {
         try? PersistanceServiceType.userDefaults.persistanceService.delete(key)
-        try? PersistanceServiceType.keyChain.persistanceService.delete(key)
-        try? PersistanceServiceType.keyChain.persistanceService.delete(kKeychainKey)
+        try? PersistanceServiceType.secureStorage.persistanceService.delete(key)
+        try? PersistanceServiceType.secureStorage.persistanceService.delete(kKeychainKey)
         sut = nil
     }
     
@@ -58,13 +71,13 @@ class PersistableTests: XCTestCase {
         let expected = MockPersistable()
         let sutType = MockPersistable.self
         sut = expected
-        var result = try? sutType.get(from: key, on: .keyChain)
+        var result = try? sutType.get(from: key, on: .secureStorage)
         XCTAssertNil(result)
-        try sut.save(at: key, on: .keyChain)
-        result = try sutType.get(from: key, on: .keyChain)
+        try sut.save(at: key, on: .secureStorage)
+        result = try sutType.get(from: key, on: .secureStorage)
         XCTAssertEqual(result, expected)
-        try sut.delete(from: key, on: .keyChain)
-        result = try? sutType.get(from: key, on: .keyChain)
+        try sut.delete(from: key, on: .secureStorage)
+        result = try? sutType.get(from: key, on: .secureStorage)
         XCTAssertNil(result)
     }
     
@@ -72,16 +85,16 @@ class PersistableTests: XCTestCase {
         let expected = ["Value1", "Value2"]
         let sutType = [String].self
         sut = expected
-        var result = try? sutType.get(from: key, on: .keyChain)
+        var result = try? sutType.get(from: key, on: .secureStorage)
         XCTAssertNil(result)
-        try sut.save(at: key, on: .keyChain)
-        result = try sutType.get(from: key, on: .keyChain)
+        try sut.save(at: key, on: .secureStorage)
+        result = try sutType.get(from: key, on: .secureStorage)
         XCTAssertEqual(result, expected)
-        try ["",""].save(at: key, on: .keyChain)
-        result = try sutType.get(from: key, on: .keyChain)
+        try ["",""].save(at: key, on: .secureStorage)
+        result = try sutType.get(from: key, on: .secureStorage)
         XCTAssertNotEqual(result, expected)
-        try sut.delete(from: key, on: .keyChain)
-        result = try? sutType.get(from: key, on: .keyChain)
+        try sut.delete(from: key, on: .secureStorage)
+        result = try? sutType.get(from: key, on: .secureStorage)
         XCTAssertNil(result)
     }
     
@@ -152,22 +165,4 @@ class PersistableTests: XCTestCase {
         XCTAssertNil(result)
     }
 
-}
-
-struct MockPersistable: Codable, Equatable, Persistable {
-    let property = "Property"
-}
-
-struct MockUserDefaultsPersistable: Codable, Equatable, UserDefaultsPersistable {
-    let property = "Property"
-}
-
-struct MockKeychainPersistable: Codable, Equatable, KeychainPersistable {
-    let property = "Property"
-}
-
-extension MockKeychainPersistable: PersistanceKeyRepresentable {
-    static var persistanceKey: String {
-        return kKeychainKey
-    }
 }

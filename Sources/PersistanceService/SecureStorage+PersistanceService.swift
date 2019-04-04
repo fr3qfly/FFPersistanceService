@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Keychain: PersistanceService {
+extension SecureStorage: PersistanceService {
     func save<ObjectType>(_ value: ObjectType, at key: String) throws where ObjectType: Persistable {
         let data = try value.toPersistableData()
         save(data: data, key: key)

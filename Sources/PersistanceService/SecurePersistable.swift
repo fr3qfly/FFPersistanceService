@@ -1,5 +1,5 @@
 //
-//  KeychainPersistable.swift
+//  SecurePersistable.swift
 //  PersistanceService
 //
 //  Created by Balazs Szamody on 3/4/19.
@@ -8,18 +8,18 @@
 
 import Foundation
 
-public protocol KeychainPersistable: PredefinedPersistable {}
+public protocol SecurePersistable: PredefinedPersistable {}
 
-extension KeychainPersistable {
+extension SecurePersistable {
     public func save(at key: String) throws {
-        try save(at: key, on: .keyChain)
+        try save(at: key, on: .secureStorage)
     }
     
     public static func get(from key: String) throws -> Self {
-        return try get(from: key, on: .keyChain)
+        return try get(from: key, on: .secureStorage)
     }
     
     public static func delete(from key: String) throws {
-        try delete(from: key, on: .keyChain)
+        try delete(from: key, on: .secureStorage)
     }
 }

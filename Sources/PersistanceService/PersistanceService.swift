@@ -10,14 +10,14 @@ import Foundation
 
 public enum PersistanceServiceType {
     case userDefaults
-    case keyChain
+    case secureStorage
     
     var persistanceService: PersistanceService {
         switch self {
         case .userDefaults:
             return UserDefaults.standard
-        case .keyChain:
-            return Keychain.shared
+        case .secureStorage:
+            return SecureStorage.shared
         }
     }
 }

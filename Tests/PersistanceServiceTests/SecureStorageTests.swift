@@ -9,21 +9,22 @@
 import XCTest
 @testable import PersistanceService
 
-class KeychainTests: XCTestCase {
+class SecureStorageTests: XCTestCase {
     
     static let allTests = [
         ("testSave", testSave),
         ("testSaveOnPersistableType", testSaveOnPersistableType),
         ("testDelete", testDelete),
-        ("testDeleteOnPersistableType", testDeleteOnPersistableType)
+        ("testDeleteOnPersistableType", testDeleteOnPersistableType),
+        ("testOverwrite", testOverwrite)
     ]
     
     let key = "TestKey"
-    var sut: Keychain!
+    var sut: SecureStorage!
 
     override func setUp() {
         super.setUp()
-        sut = Keychain.shared
+        sut = SecureStorage.shared
     }
 
     override func tearDown() {

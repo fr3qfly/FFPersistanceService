@@ -10,6 +10,12 @@ import XCTest
 @testable import PersistanceService
 
 class UserDefaultsTests: XCTestCase {
+    static let allTests = [
+        ("testSave", testSave),
+        ("testDelete", testDelete),
+        ("testOverwrite", testOverwrite)
+    ]
+    
     let key = "key"
     
     var sut: PersistanceService!
