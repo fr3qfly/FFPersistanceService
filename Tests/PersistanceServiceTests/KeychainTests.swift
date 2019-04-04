@@ -10,6 +10,14 @@ import XCTest
 @testable import PersistanceService
 
 class KeychainTests: XCTestCase {
+    
+    static let allTests = [
+        ("testSave", testSave),
+        ("testSaveOnPersistableType", testSaveOnPersistableType),
+        ("testDelete", testDelete),
+        ("testDeleteOnPersistableType", testDeleteOnPersistableType)
+    ]
+    
     let key = "TestKey"
     var sut: Keychain!
 
