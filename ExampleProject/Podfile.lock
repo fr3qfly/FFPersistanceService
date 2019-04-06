@@ -1,0 +1,16 @@
+PODS:
+  - FFPersistanceService (0.1.3)
+
+DEPENDENCIES:
+  - FFPersistanceService (from `./..`)
+
+EXTERNAL SOURCES:
+  FFPersistanceService:
+    :path: "./.."
+
+SPEC CHECKSUMS:
+  FFPersistanceService: 08564c334f78822fc02ec6178580a8e638ccc232
+
+PODFILE CHECKSUM: 352b7c5a849d1f9d9571dc359638c1eb8fd5f578
+
+COCOAPODS: 1.6.0
