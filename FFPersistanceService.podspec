@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFPersistanceService'
-  s.version          = '0.1.5'
-  s.summary          = 'Lightweight object saving'
+  s.version          = '1.0.0'
+  s.summary          = 'Lightweight object saving solution'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A framework that makes it super easy to save objects in `UserDefaults` and `Keychain`
-or in any conforming persistance service.
+A framework that makes it super easy to save objects in `UserDefaults` , `Keychain` or any custom key-value based object storage solution through protocols.
+
+With the use of `Persistable` protocol you can easily `save`/`load`/`delete` through your Model objects in the predefined storage solution.
                        DESC
 
   s.homepage         = 'https://github.com/fr3qfly/FFPersistanceService'

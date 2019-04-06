@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,14 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04FB65F3D919D472AA54E644A78346E8 /* FFPersistanceService.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FFPersistanceService.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		04FB65F3D919D472AA54E644A78346E8 /* FFPersistanceService.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FFPersistanceService.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		0E77AD067F5C98551ADB50BD7ABD2318 /* FFPersistanceService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FFPersistanceService-dummy.m"; sourceTree = "<group>"; };
 		144A56F533E364600E448F34380CEA60 /* PersistanceKeyRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistanceKeyRepresentable.swift; path = Sources/FFPersistanceService/PersistanceKeyRepresentable.swift; sourceTree = "<group>"; };
-		1DC33FF2942BD5BB508FF813B4046ECE /* FFPersistanceService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FFPersistanceService.framework; path = FFPersistanceService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC33FF2942BD5BB508FF813B4046ECE /* FFPersistanceService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFPersistanceService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD713811FAC1CF5934327F994E6EBF4 /* Pods-ExampleProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleProject-acknowledgements.markdown"; sourceTree = "<group>"; };
 		21EF7D42746BAE899486A88F1CEC57A5 /* Pods-ExampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleProject.release.xcconfig"; sourceTree = "<group>"; };
 		50E3333920ACEBFFA7A734A0E92ADCED /* FFPersistanceService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FFPersistanceService-Info.plist"; sourceTree = "<group>"; };
-		52C9BB2601FD5F2973B96F77869EB2FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		52C9BB2601FD5F2973B96F77869EB2FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5C238A661B3927B30EE17BBFBCF037B7 /* FFPersistanceService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FFPersistanceService.xcconfig; sourceTree = "<group>"; };
 		65E0A7DC4D374A7D32AA8848748DA0C9 /* Pods-ExampleProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleProject-umbrella.h"; sourceTree = "<group>"; };
 		6781187279C0229F22FC877CC2DDA000 /* Pods-ExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,19 +51,19 @@
 		7C677ADB6751F2A6CA0C924790C55920 /* PersistanceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistanceService.swift; path = Sources/FFPersistanceService/PersistanceService.swift; sourceTree = "<group>"; };
 		817B8FA3E948F542ABE518195A0B21CC /* SecureStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureStorage.swift; path = Sources/FFPersistanceService/SecureStorage.swift; sourceTree = "<group>"; };
 		81BF4E491064917CA1EEF9443558B247 /* Persistable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Persistable.swift; path = Sources/FFPersistanceService/Persistable.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7294C45B28BEB293C2B55BAC4DE01C1 /* UserDefaults+PersistanceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UserDefaults+PersistanceService.swift"; path = "Sources/FFPersistanceService/UserDefaults+PersistanceService.swift"; sourceTree = "<group>"; };
 		AF6245447DEA78B9B5471BDD7622FEE0 /* SecureStorage+PersistanceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SecureStorage+PersistanceService.swift"; path = "Sources/FFPersistanceService/SecureStorage+PersistanceService.swift"; sourceTree = "<group>"; };
 		B7F10A55DF4578EB64D923FF3289A329 /* Pods-ExampleProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleProject-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA2C9CFA1A7BF5C06A9424616CFDB34E /* Pods-ExampleProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleProject-Info.plist"; sourceTree = "<group>"; };
 		C675626E2C28645E9616C848E36DC4E5 /* Persistable+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Persistable+Types.swift"; path = "Sources/FFPersistanceService/Persistable+Types.swift"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CD884AB5F2C972A61F95EE553A8BB66D /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExampleProject.framework; path = "Pods-ExampleProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD884AB5F2C972A61F95EE553A8BB66D /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE38C2B76CFE72CD3A12DD74CAAF9D7E /* UserDefaultsPersistable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultsPersistable.swift; path = Sources/FFPersistanceService/UserDefaultsPersistable.swift; sourceTree = "<group>"; };
 		D15E02DBAF82B9612B26741FA3C4AB29 /* FFPersistanceService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FFPersistanceService-prefix.pch"; sourceTree = "<group>"; };
 		DD14A65A2C7B88C4378997F329616E86 /* Pods-ExampleProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExampleProject.modulemap"; sourceTree = "<group>"; };
 		F2F075037143A07B895109FF784E9B92 /* FFPersistanceService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FFPersistanceService-umbrella.h"; sourceTree = "<group>"; };
-		F849E9BECCF6259AB989045A0D719010 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F849E9BECCF6259AB989045A0D719010 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FD24BD60D2C478F390594F0CEF901124 /* Pods-ExampleProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleProject-dummy.m"; sourceTree = "<group>"; };
 		FFD049B1A9C7250C41B53F0B0AFBC7BD /* Pods-ExampleProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleProject-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +273,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -359,11 +360,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject.modulemap";
 				OTHER_LDFLAGS = "";
@@ -432,8 +429,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -521,11 +517,7 @@
 				INFOPLIST_FILE = "Target Support Files/FFPersistanceService/FFPersistanceService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FFPersistanceService/FFPersistanceService.modulemap";
 				PRODUCT_MODULE_NAME = FFPersistanceService;
 				PRODUCT_NAME = FFPersistanceService;
@@ -558,11 +550,7 @@
 				INFOPLIST_FILE = "Target Support Files/FFPersistanceService/FFPersistanceService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FFPersistanceService/FFPersistanceService.modulemap";
 				PRODUCT_MODULE_NAME = FFPersistanceService;
 				PRODUCT_NAME = FFPersistanceService;
@@ -594,11 +582,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject.modulemap";
 				OTHER_LDFLAGS = "";
