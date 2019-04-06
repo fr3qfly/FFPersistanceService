@@ -1,0 +1,31 @@
+{
+  "Mac" : [
+    {
+      "name" : "FFPersistanceService",
+      "hash" : "cc81548aa78d00a915bbd99efbd2901b27265c676019b4b0607a4532f54d8b0b",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "FFPersistanceService",
+      "hash" : "77f4d951a8849c0750ef44e210f610b9bcb3dd1d5e06040d170041b003e2f9c9",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "FFPersistanceService",
+      "hash" : "e95aaa395bf209bb45cc37539c5b4d0eb9cd5e60c1bc2026ed5e3767590a0d73",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ],
+  "commitish" : "dec9fe0a7b51335f98f2d2339047fa5d41281f79",
+  "iOS" : [
+    {
+      "name" : "FFPersistanceService",
+      "hash" : "9d12808cee0e68ac76e970fae3fde271337358ad1f52aa1c046b24d2d94b38c9",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ]
+}
