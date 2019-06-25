@@ -1,0 +1,6 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+xcodeproj: ./FFPersistanceService.xcodeproj
+scheme: FFPersistanceService-Package
+output_directory: ./TestResults

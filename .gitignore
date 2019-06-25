@@ -1,7 +1,14 @@
 .DS_Store
-/.build
+
 /Packages
 /Example
 *.zip
+!/.build
+/.build/*
+!/.build/x86_64-apple-macosx/
+/.build/x86_64-apple-macosx/*
+!/.build/x86_64-apple-macosx/debug/
+/.build/x86_64-apple-macosx/debug/*
+!/.build/x86_64-apple-macosx/debug/codecov/
 
 FFPersistanceService\.xcodeproj/project\.xcworkspace/xcuserdata/fr3qfly\.xcuserdatad/
