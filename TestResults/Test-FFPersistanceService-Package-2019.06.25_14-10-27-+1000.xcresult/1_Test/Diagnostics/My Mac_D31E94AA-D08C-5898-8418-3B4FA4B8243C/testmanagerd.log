@@ -1,0 +1,6 @@
+14:10:42.132 xcodebuild[83876:18442372] Got authorization request for pid 83914
+
+14:10:42.132 xcodebuild[83876:18442372] Requesting authorization for pid 83914
+
+14:10:42.132 xcodebuild[83876:18442372] Got reply to authorization request for pid 83914 (result:error): 1: (null)
+

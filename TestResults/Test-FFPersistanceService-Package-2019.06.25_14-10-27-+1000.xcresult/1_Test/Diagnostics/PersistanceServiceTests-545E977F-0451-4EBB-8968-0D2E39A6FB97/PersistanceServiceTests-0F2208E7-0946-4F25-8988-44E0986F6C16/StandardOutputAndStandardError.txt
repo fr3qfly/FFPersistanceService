@@ -1,0 +1,55 @@
+Test Suite 'All tests' started at 2019-06-25 14:10:42.146
+Test Suite 'PersistanceServiceTests.xctest' started at 2019-06-25 14:10:42.146
+Test Suite 'PersistableTests' started at 2019-06-25 14:10:42.147
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyArrayDeletesValueOnUserDefaults]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyArrayDeletesValueOnUserDefaults]' passed (0.134 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyValue]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyValue]' passed (0.004 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testIntArrayOnUserDefaults]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testIntArrayOnUserDefaults]' passed (0.002 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistable]' started.
+2019-06-25 14:10:42.289237+1000 xctest[83914:18442380] [logging-persist] cannot open file at line 42270 of [95fbac39ba]
+2019-06-25 14:10:42.289254+1000 xctest[83914:18442380] [logging-persist] os_unix.c:42270: (0) open(/var/db/DetachedSignatures) - Undefined error: 0
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistable]' passed (0.045 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistableOnUserDefaults]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistableOnUserDefaults]' passed (0.005 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnKeychain]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnKeychain]' passed (0.045 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnUserDefaults]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnUserDefaults]' passed (0.005 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testPersistanceKeyRepresentable]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testPersistanceKeyRepresentable]' passed (0.066 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testStringArrayOnKeychain]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testStringArrayOnKeychain]' passed (0.074 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testStringOnUserDefaults]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testStringOnUserDefaults]' passed (0.003 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testUserDefaultsPersistable]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testUserDefaultsPersistable]' passed (0.002 seconds).
+Test Suite 'PersistableTests' passed at 2019-06-25 14:10:42.537.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.385 (0.390) seconds
+Test Suite 'SecureStorageTests' started at 2019-06-25 14:10:42.537
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDelete]' started.
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDelete]' passed (0.036 seconds).
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDeleteOnPersistableType]' started.
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDeleteOnPersistableType]' passed (0.041 seconds).
+Test Case '-[PersistanceServiceTests.SecureStorageTests testOverwrite]' started.
+Test Case '-[PersistanceServiceTests.SecureStorageTests testOverwrite]' passed (0.070 seconds).
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSave]' started.
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSave]' passed (0.036 seconds).
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSaveOnPersistableType]' started.
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSaveOnPersistableType]' passed (0.040 seconds).
+Test Suite 'SecureStorageTests' passed at 2019-06-25 14:10:42.763.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.222 (0.226) seconds
+Test Suite 'UserDefaultsTests' started at 2019-06-25 14:10:42.764
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testDelete]' started.
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testDelete]' passed (0.001 seconds).
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testOverwrite]' started.
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testOverwrite]' passed (0.001 seconds).
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testSave]' started.
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testSave]' passed (0.002 seconds).
+Test Suite 'UserDefaultsTests' passed at 2019-06-25 14:10:42.773.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.004 (0.009) seconds
+Test Suite 'PersistanceServiceTests.xctest' passed at 2019-06-25 14:10:42.774.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.611 (0.628) seconds
+Test Suite 'All tests' passed at 2019-06-25 14:10:42.775.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.611 (0.629) seconds

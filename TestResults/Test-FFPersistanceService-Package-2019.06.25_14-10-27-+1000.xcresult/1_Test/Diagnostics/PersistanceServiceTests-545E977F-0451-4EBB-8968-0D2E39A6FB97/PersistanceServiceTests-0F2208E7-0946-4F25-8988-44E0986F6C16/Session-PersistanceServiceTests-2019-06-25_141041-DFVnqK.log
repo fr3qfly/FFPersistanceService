@@ -1,0 +1,288 @@
+14:10:41.712 xcodebuild[83876:18441837] Beginning test session PersistanceServiceTests-C2C657C1-DA72-4CA1-8D4F-3E3FD01D3F8F at 2019-06-25 14:10:41.712 with Xcode 10E1001 on target <DVTLocalComputer: 0x7fa3f4f15b30 (My Mac | x86_64h)> (10.14.5 (18F132))
+14:10:41.712 xcodebuild[83876:18441837] 	/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+-scheme
+FFPersistanceService-Package
+-derivedDataPath
+.build/xcode
+-enableCodeCoverage
+YES
+test
+14:10:41.712 xcodebuild[83876:18441837] Launching with Xcode.IDEFoundation.Launcher.PosixSpawn
+14:10:41.713 xcodebuild[83876:18441837] Test standard output and standard error is at /Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Logs/Test/Test-FFPersistanceService-Package-2019.06.25_14-10-27-+1000.xcresult/1_Test/Diagnostics/PersistanceServiceTests-545E977F-0451-4EBB-8968-0D2E39A6FB97/PersistanceServiceTests-0F2208E7-0946-4F25-8988-44E0986F6C16/StandardOutputAndStandardError.txt
+14:10:41.719 xcodebuild[83876:18441837] Setting up test runner session
+14:10:41.719 xcodebuild[83876:18441837] Requesting a socket for communication with testmanagerd.
+14:10:41.719 xcodebuild[83876:18441837] Registering/updating daemon-based crash report observer for process names (
+    xctest
+)
+14:10:41.843 xcodebuild[83876:18442372] Got socket for DTX-layer communication.
+14:10:41.844 xcodebuild[83876:18442371] Received connection for test runner session
+14:10:41.844 xcodebuild[83876:18442371] Listening for proxy connection request from the test bundle
+14:10:41.844 xcodebuild[83876:18442372] XPC connection for control was invalidated.
+14:10:41.844 xcodebuild[83876:18441837] Test runner session acquired connection.
+14:10:41.844 xcodebuild[83876:18441837] Waiting for test process to launch.
+14:10:41.844 xcodebuild[83876:18442371] Initiating session with identifier: C2C657C1-DA72-4CA1-8D4F-3E3FD01D3F8F
+14:10:41.846 xcodebuild[83876:18442378] Got reply to session initiation request with identifier C2C657C1-DA72-4CA1-8D4F-3E3FD01D3F8F (result:error): 30: (null)
+14:10:41.853 xcodebuild[83876:18441837] Finished requesting crash reports. Continuing with testing.
+14:10:41.855 xcodebuild[83876:18441837] Launch session started.
+14:10:41.859 xcodebuild[83876:18441837] Test process runnable PID is 83914.
+14:10:42.131 xcodebuild[83876:18442378] Handling proxy channel request from test runner
+14:10:42.132 xcodebuild[83876:18442378] Test runner is ready, running protocol 30, requires at least version 7. Control framework is running 30 and requires at least 7
+14:10:42.132 xcodebuild[83876:18441837] Test runner session successfully initiated.
+14:10:42.132 xcodebuild[83876:18441837] Whitelisting test process ID 83914
+14:10:42.133 xcodebuild[83876:18441837] Got whitelisting response from test daemon: Success
+14:10:42.133 xcodebuild[83876:18441837] Registering/updating daemon-based crash report observer for process names (
+    xctest
+)
+14:10:42.133 xcodebuild[83876:18441837] Telling test runner to start executing tests.
+14:10:42.133 xctest[83914:18442381] _IDE_startExecutingTestPlanWithProtocolVersion:30
+14:10:42.133 xctest[83914:18442381] <XCTWaiter: 0x7fcc6fe19aa0, state: XCTWaiterStateSucceeded>: cancelWaiting
+14:10:42.134 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fe19aa0, state: XCTWaiterStateSucceeded> done waiting
+14:10:42.134 xctest[83914:18442380] Canceling watchdog for <XCTWaiter: 0x7fcc6fe19aa0, state: XCTWaiterStateInProgress>.
+14:10:42.134 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fe19aa0, state: XCTWaiterStateSucceeded> cleaning up `IDE session ready for test plan`
+14:10:41.944 xctest[83914:18442380] Linked XCTest.framework from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Versions/A/XCTest, built with Xcode 1020(10E126), modified on Saturday, 6 April 2019 at 11:41:44 am Australian Eastern Daylight Time
+XCTest.framework bundle version: 14490.71
+14:10:41.945 xctest[83914:18442380] System uptime: 6d 18:22:13
+14:10:41.945 xctest[83914:18442380] Process arguments: (
+    "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Agents/xctest",
+    "-NSTreatUnknownArgumentsAsOpen",
+    NO,
+    "-ApplePersistenceIgnoreState",
+    YES
+)
+14:10:41.945 xctest[83914:18442380] Process environment: {
+    "Apple_PubSub_Socket_Render" = "/private/tmp/com.apple.launchd.AWj2VI1RD1/Render";
+    "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+    "CA_DEBUG_TRANSACTIONS" = 0;
+    "DYLD_FRAMEWORK_PATH" = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug:/Applications/Xcode.app/Contents/SharedFrameworks::/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug:/Applications/Xcode.app/Contents/SharedFrameworks:";
+    "DYLD_LIBRARY_PATH" = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug:/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug";
+    HOME = "/Users/fr3qfly";
+    IDEiPhoneInternalTestBundleName = "PersistanceServiceTests.xctest";
+    LANG = "en_AU.UTF-8";
+    "LC_CTYPE" = "en_AU.UTF-8";
+    LESS = "-R";
+    "LLVM_PROFILE_FILE" = "/var/folders/5x/m_4lsrp11_q_hhfrv1l5ztmr0000gn/T/482E12AD-A882-460F-B275-50455306ADAD-83876-000213A15337B98E/90823DC5-093A-4DF3-BB35-DD3464A77A68-%p.profraw%15x";
+    LOGNAME = fr3qfly;
+    LSCOLORS = Gxfxcxdxbxegedabagacad;
+    MAKEFLAGS = "";
+    MAKELEVEL = 1;
+    MFLAGS = "";
+    "MTC_CRASH_ON_REPORT" = 1;
+    NSApplicationQuitWithoutSuddenTermination = YES;
+    NSUnbufferedIO = YES;
+    OLDPWD = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Logs/Test/Test-FFPersistanceService-Package-2019.06.25_13-57-51-+1000.xcresult/1_Test";
+    "OS_ACTIVITY_DT_MODE" = YES;
+    PAGER = less;
+    PATH = "/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin";
+    PWD = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService";
+    SHELL = "/bin/zsh";
+    SHLVL = 1;
+    "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+    "SSH_AUTH_SOCK" = "/private/tmp/com.apple.launchd.OCDzHOQsPL/Listeners";
+    TERM = "xterm-256color";
+    "TERM_PROGRAM" = "Apple_Terminal";
+    "TERM_PROGRAM_VERSION" = "421.2";
+    "TERM_SESSION_ID" = "A09C62D4-8FE1-4A6F-9095-BCD22761ADFD";
+    TMPDIR = "/var/folders/5x/m_4lsrp11_q_hhfrv1l5ztmr0000gn/T/";
+    USER = fr3qfly;
+    XCTestConfigurationFilePath = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Logs/Test/Test-FFPersistanceService-Package-2019.06.25_14-10-27-+1000.xcresult/1_Test/Diagnostics/PersistanceServiceTests-545E977F-0451-4EBB-8968-0D2E39A6FB97/PersistanceServiceTests-0F2208E7-0946-4F25-8988-44E0986F6C16/LaunchSessions/C2C657C1-DA72-4CA1-8D4F-3E3FD01D3F8F/remote-container/tmp/PersistanceServiceTests-C2C657C1-DA72-4CA1-8D4F-3E3FD01D3F8F.xctestconfiguration";
+    "XPC_FLAGS" = 0x0;
+    "XPC_SERVICE_NAME" = 0;
+    ZSH = "/Users/fr3qfly/.oh-my-zsh";
+    "_" = "/usr/bin/make";
+    "__CF_USER_TEXT_ENCODING" = "0x1F5:0x0:0xF";
+    "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug";
+    "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug:/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug";
+    "__XPC_DYLD_LIBRARY_PATH" = "/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug:/Users/fr3qfly/Developer/@Fr3qFly_Dev/PersistanceService/.build/xcode/Build/Products/Debug";
+    "__XPC_LLVM_PROFILE_FILE" = "/var/folders/5x/m_4lsrp11_q_hhfrv1l5ztmr0000gn/T/482E12AD-A882-460F-B275-50455306ADAD-83876-000213A15337B98E/90823DC5-093A-4DF3-BB35-DD3464A77A68-%p.profraw%15x";
+}
+14:10:41.945 xctest[83914:18442380] App Sandbox active: NO
+14:10:41.946 xctest[83914:18442380] Creating future for 'Acquiring IDE transport' with timeout 60.00
+14:10:41.946 xctest[83914:18442380] Creating future for 'Exchange protocol versions with daemon' with timeout 15.00
+14:10:41.947 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fd09960, state: XCTWaiterStateInProgress> entering wait loop for 15.00s with expectations: `Exchange protocol versions with daemon`
+14:10:42.121 xctest[83914:18442381] <XCTWaiter: 0x7fcc6fd09960, state: XCTWaiterStateSucceeded>: cancelWaiting
+14:10:42.121 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fd09960, state: XCTWaiterStateSucceeded> done waiting
+14:10:42.121 xctest[83914:18442380] Canceling watchdog for <XCTWaiter: 0x7fcc6fd09960, state: XCTWaiterStateInProgress>.
+14:10:42.121 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fd09960, state: XCTWaiterStateSucceeded> cleaning up `Exchange protocol versions with daemon`
+14:10:42.121 xctest[83914:18442380] Got daemon protocol version 26
+14:10:42.121 xctest[83914:18442380] Requesting IDE connection transport
+14:10:42.121 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fcb0050, state: XCTWaiterStateInProgress> entering wait loop for 59.82s with expectations: `Acquiring IDE transport`
+14:10:42.121 xctest[83914:18442381] Creating transport with received transport data
+14:10:42.122 xctest[83914:18442381] <XCTWaiter: 0x7fcc6fcb0050, state: XCTWaiterStateSucceeded>: cancelWaiting
+14:10:42.122 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fcb0050, state: XCTWaiterStateSucceeded> done waiting
+14:10:42.122 xctest[83914:18442380] Canceling watchdog for <XCTWaiter: 0x7fcc6fcb0050, state: XCTWaiterStateInProgress>.
+14:10:42.122 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fcb0050, state: XCTWaiterStateSucceeded> cleaning up `Acquiring IDE transport`
+14:10:42.122 xctest[83914:18442380] Creating connection with transport <DTXFileDescriptorTransport: 0x7fcc6fe0fce0>
+14:10:42.122 xctest[83914:18442380] Creating the proxy channel with connection <DTXConnection 0x7fcc6fe0f7d0 : x1>
+14:10:42.137 xcodebuild[83876:18441837] Starting test plan, clearing initialization timeout timer.
+14:10:42.137 xctest[83914:18442380] Entering test execution event loop
+14:10:42.137 xctest[83914:18442380] -[XCTRunnerIDESession testBundleWillStart:]
+14:10:42.137 xctest[83914:18442380] Loading test suite...
+14:10:42.146 xctest[83914:18442380] Finished loading test suite, took 0.009s
+14:10:42.146 xctest[83914:18442380] Running suite...
+Test Suite 'All tests' started at 2019-06-25 14:10:42.146
+14:10:42.146 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteWillStart:]
+14:10:42.147 xcodebuild[83876:18441837] _XCT_testSuite:All tests didStartAt:2019-06-25 04:10:42 +0000
+14:10:42.147 xcodebuild[83876:18442372] (LOG ARBITER) Rotating message buffer with 2 messages.
+14:10:42.282 xcodebuild[83876:18442372] (LOG ARBITER) Dumping buffered message data; 2 messages.
+Test Suite 'PersistanceServiceTests.xctest' started at 2019-06-25 14:10:42.146
+Test Suite 'PersistableTests' started at 2019-06-25 14:10:42.147
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyArrayDeletesValueOnUserDefaults]' started.
+14:10:42.147 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteWillStart:]
+14:10:42.148 xcodebuild[83876:18441837] _XCT_testSuite:PersistableTests didStartAt:2019-06-25 04:10:42 +0000
+14:10:42.148 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testEmptyArrayDeletesValueOnUserDefaults
+14:10:42.147 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testEmptyArrayDeletesValueOnUserDefaults
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyArrayDeletesValueOnUserDefaults]' passed (0.134 seconds).
+14:10:42.281 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyValue]' started.
+14:10:42.282 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testEmptyArrayDeletesValueOnUserDefaults withStatus:passed duration:0.1342040300369263
+14:10:42.281 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testEmptyValue
+14:10:42.283 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testEmptyValue
+Test Case '-[PersistanceServiceTests.PersistableTests testEmptyValue]' passed (0.004 seconds).
+14:10:42.285 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+Test Case '-[PersistanceServiceTests.PersistableTests testIntArrayOnUserDefaults]' started.
+14:10:42.286 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testEmptyValue withStatus:passed duration:0.003845095634460449
+14:10:42.286 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testIntArrayOnUserDefaults
+14:10:42.285 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testIntArrayOnUserDefaults
+Test Case '-[PersistanceServiceTests.PersistableTests testIntArrayOnUserDefaults]' passed (0.002 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistable]' started.
+14:10:42.287 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.288 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testIntArrayOnUserDefaults withStatus:passed duration:0.001837015151977539
+14:10:42.288 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testKeychainPersistable
+14:10:42.289 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testKeychainPersistable
+2019-06-25 14:10:42.289237+1000 xctest[83914:18442380] [logging-persist] cannot open file at line 42270 of [95fbac39ba]
+2019-06-25 14:10:42.289254+1000 xctest[83914:18442380] [logging-persist] os_unix.c:42270: (0) open(/var/db/DetachedSignatures) - Undefined error: 0
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistable]' passed (0.045 seconds).
+14:10:42.332 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.333 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testKeychainPersistable withStatus:passed duration:0.04466104507446289
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistableOnUserDefaults]' started.
+14:10:42.334 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testKeychainPersistableOnUserDefaults
+14:10:42.333 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testKeychainPersistableOnUserDefaults
+Test Case '-[PersistanceServiceTests.PersistableTests testKeychainPersistableOnUserDefaults]' passed (0.005 seconds).
+14:10:42.337 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.409 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testKeychainPersistableOnUserDefaults withStatus:passed duration:0.004537105560302734
+14:10:42.338 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testMockCodableOnKeychain
+14:10:42.409 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testMockCodableOnKeychain
+14:10:42.383 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.409 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testMockCodableOnKeychain withStatus:passed duration:0.04513406753540039
+14:10:42.384 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testMockCodableOnUserDefaults
+14:10:42.409 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testMockCodableOnUserDefaults
+14:10:42.389 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.410 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testMockCodableOnUserDefaults withStatus:passed duration:0.005016922950744629
+14:10:42.389 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testPersistanceKeyRepresentable
+14:10:42.410 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testPersistanceKeyRepresentable
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnKeychain]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnKeychain]' passed (0.045 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnUserDefaults]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testMockCodableOnUserDefaults]' passed (0.005 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testPersistanceKeyRepresentable]' started.
+Test Case '-[PersistanceServiceTests.PersistableTests testPersistanceKeyRepresentable]' passed (0.066 seconds).
+Test Case '-[PersistanceServiceTests.PersistableTests testStringArrayOnKeychain]' started.
+14:10:42.457 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testPersistanceKeyRepresentable withStatus:passed duration:0.06605303287506104
+14:10:42.458 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testStringArrayOnKeychain
+14:10:42.455 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.456 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testStringArrayOnKeychain
+Test Case '-[PersistanceServiceTests.PersistableTests testStringArrayOnKeychain]' passed (0.074 seconds).
+14:10:42.530 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+Test Case '-[PersistanceServiceTests.PersistableTests testStringOnUserDefaults]' started.
+14:10:42.531 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testStringArrayOnKeychain withStatus:passed duration:0.07444298267364502
+14:10:42.532 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testStringOnUserDefaults
+14:10:42.531 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testStringOnUserDefaults
+Test Case '-[PersistanceServiceTests.PersistableTests testStringOnUserDefaults]' passed (0.003 seconds).
+14:10:42.534 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.534 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testStringOnUserDefaults withStatus:passed duration:0.003116011619567871
+Test Case '-[PersistanceServiceTests.PersistableTests testUserDefaultsPersistable]' started.
+14:10:42.535 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.PersistableTests method:testUserDefaultsPersistable
+14:10:42.534 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.PersistableTests testUserDefaultsPersistable
+Test Case '-[PersistanceServiceTests.PersistableTests testUserDefaultsPersistable]' passed (0.002 seconds).
+14:10:42.536 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.537 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.PersistableTests method:testUserDefaultsPersistable withStatus:passed duration:0.002093911170959473
+Test Suite 'PersistableTests' passed at 2019-06-25 14:10:42.537.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.385 (0.390) seconds
+14:10:42.537 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteDidFinish:]
+Test Suite 'SecureStorageTests' started at 2019-06-25 14:10:42.537
+14:10:42.538 xcodebuild[83876:18441837] _XCT_testSuite:PersistableTests didFinishAt:2019-06-25 04:10:42 +0000 runCount:11 withFailures:0 unexpected:0 testDuration:0.3849412202835083 totalDuration:0.3900250196456909
+14:10:42.537 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteWillStart:]
+14:10:42.538 xcodebuild[83876:18441837] _XCT_testSuite:SecureStorageTests didStartAt:2019-06-25 04:10:42 +0000
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDelete]' started.
+14:10:42.537 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.SecureStorageTests testDelete
+14:10:42.538 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.SecureStorageTests method:testDelete
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDelete]' passed (0.036 seconds).
+14:10:42.573 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDeleteOnPersistableType]' started.
+14:10:42.574 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.SecureStorageTests method:testDelete withStatus:passed duration:0.03566598892211914
+14:10:42.574 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.SecureStorageTests testDeleteOnPersistableType
+14:10:42.575 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.SecureStorageTests method:testDeleteOnPersistableType
+Test Case '-[PersistanceServiceTests.SecureStorageTests testDeleteOnPersistableType]' passed (0.041 seconds).
+14:10:42.614 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.615 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.SecureStorageTests method:testDeleteOnPersistableType withStatus:passed duration:0.04056596755981445
+Test Case '-[PersistanceServiceTests.SecureStorageTests testOverwrite]' started.
+14:10:42.615 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.SecureStorageTests testOverwrite
+14:10:42.616 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.SecureStorageTests method:testOverwrite
+Test Case '-[PersistanceServiceTests.SecureStorageTests testOverwrite]' passed (0.070 seconds).
+14:10:42.685 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.686 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.SecureStorageTests method:testOverwrite withStatus:passed duration:0.0702439546585083
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSave]' started.
+14:10:42.686 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.SecureStorageTests testSave
+14:10:42.687 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.SecureStorageTests method:testSave
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSave]' passed (0.036 seconds).
+14:10:42.722 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.723 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.SecureStorageTests method:testSave withStatus:passed duration:0.03594803810119629
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSaveOnPersistableType]' started.
+14:10:42.723 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.SecureStorageTests testSaveOnPersistableType
+14:10:42.723 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.SecureStorageTests method:testSaveOnPersistableType
+Test Case '-[PersistanceServiceTests.SecureStorageTests testSaveOnPersistableType]' passed (0.040 seconds).
+14:10:42.762 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.764 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.SecureStorageTests method:testSaveOnPersistableType withStatus:passed duration:0.03998196125030518
+Test Suite 'SecureStorageTests' passed at 2019-06-25 14:10:42.763.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.222 (0.226) seconds
+14:10:42.764 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteDidFinish:]
+14:10:42.765 xcodebuild[83876:18441837] _XCT_testSuite:SecureStorageTests didFinishAt:2019-06-25 04:10:42 +0000 runCount:5 withFailures:0 unexpected:0 testDuration:0.2224059104919434 totalDuration:0.2263429164886475
+Test Suite 'UserDefaultsTests' started at 2019-06-25 14:10:42.764
+14:10:42.765 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteWillStart:]
+14:10:42.766 xcodebuild[83876:18441837] _XCT_testSuite:UserDefaultsTests didStartAt:2019-06-25 04:10:42 +0000
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testDelete]' started.
+14:10:42.766 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.UserDefaultsTests testDelete
+14:10:42.766 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.UserDefaultsTests method:testDelete
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testDelete]' passed (0.001 seconds).
+14:10:42.767 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.769 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.UserDefaultsTests method:testDelete withStatus:passed duration:0.001372933387756348
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testOverwrite]' started.
+14:10:42.769 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.UserDefaultsTests testOverwrite
+14:10:42.770 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.UserDefaultsTests method:testOverwrite
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testOverwrite]' passed (0.001 seconds).
+14:10:42.771 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.771 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.UserDefaultsTests method:testOverwrite withStatus:passed duration:0.001255989074707031
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testSave]' started.
+14:10:42.771 xctest[83914:18442380] -[XCTRunnerIDESession testCaseWillStart:] PersistanceServiceTests.UserDefaultsTests testSave
+14:10:42.772 xcodebuild[83876:18441837] _XCT_testCaseDidStartForTestClass:PersistanceServiceTests.UserDefaultsTests method:testSave
+Test Case '-[PersistanceServiceTests.UserDefaultsTests testSave]' passed (0.002 seconds).
+14:10:42.773 xctest[83914:18442380] -[XCTRunnerIDESession testCaseDidFinish:]
+14:10:42.773 xcodebuild[83876:18441837] _XCT_testCaseDidFinishForTestClass:PersistanceServiceTests.UserDefaultsTests method:testSave withStatus:passed duration:0.001504898071289062
+Test Suite 'UserDefaultsTests' passed at 2019-06-25 14:10:42.773.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.004 (0.009) seconds
+14:10:42.773 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteDidFinish:]
+14:10:42.774 xcodebuild[83876:18441837] _XCT_testSuite:UserDefaultsTests didFinishAt:2019-06-25 04:10:42 +0000 runCount:3 withFailures:0 unexpected:0 testDuration:0.004133820533752441 totalDuration:0.008644938468933105
+Test Suite 'PersistanceServiceTests.xctest' passed at 2019-06-25 14:10:42.774.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.611 (0.628) seconds
+14:10:42.774 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteDidFinish:]
+14:10:42.775 xcodebuild[83876:18441837] _XCT_testSuite:PersistanceServiceTests.xctest didFinishAt:2019-06-25 04:10:42 +0000 runCount:19 withFailures:0 unexpected:0 testDuration:0.6114809513092041 totalDuration:0.6275140047073364
+Test Suite 'All tests' passed at 2019-06-25 14:10:42.775.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.611 (0.629) seconds
+14:10:42.775 xctest[83914:18442380] -[XCTRunnerIDESession testSuiteDidFinish:]
+14:10:42.777 xcodebuild[83876:18441837] _XCT_testSuite:All tests didFinishAt:2019-06-25 04:10:42 +0000 runCount:19 withFailures:0 unexpected:0 testDuration:0.6114809513092041 totalDuration:0.629148006439209
+14:10:42.776 xctest[83914:18442380] Finished running suite.
+14:10:42.777 xctest[83914:18442380] -[XCTRunnerIDESession testBundleDidFinish:], Flushing connection to IDE...
+14:10:42.777 xctest[83914:18442380] Exited test execution event loop
+14:10:42.778 xcodebuild[83876:18441837] -[XCTTestRunnerSession _XCT_didFinishExecutingTestPlan]_block_invoke
+14:10:42.777 xctest[83914:18442380] Calling completion.
+14:10:42.778 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fe63420, state: XCTWaiterStateInProgress> entering wait loop for 15.00s with expectations: `IDE confirmed the end of session`
+14:10:42.778 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fe63420, state: XCTWaiterStateSucceeded> done waiting
+14:10:42.778 xctest[83914:18442380] Canceling watchdog for <XCTWaiter: 0x7fcc6fe63420, state: XCTWaiterStateInProgress>.
+14:10:42.779 xctest[83914:18442380] <XCTWaiter: 0x7fcc6fe63420, state: XCTWaiterStateSucceeded> cleaning up `IDE confirmed the end of session`
+14:10:42.781 xcodebuild[83876:18442379] Socket transport for DTX-layer communication disconnected.
+14:10:42.781 xcodebuild[83876:18442372] <XCTTestRunnerSession: 0x7fa3f53b09a0> lost its connection.
+14:10:42.782 xcodebuild[83876:18441837] Lost connection to test process
+14:10:42.782 xcodebuild[83876:18441837] Test process exited with exit code 0
+14:10:43.036 xcodebuild[83876:18441837] <IDETestOperationCoordinator: 0x7fa3f55a1b50> finished receiving data from testing launch session
+14:10:43.036 xcodebuild[83876:18441837] <IDETestOperationCoordinator: 0x7fa3f55a1b50>: _considerFlushingDelegateBlockQueue - nothing to flush
+14:10:43.036 xcodebuild[83876:18441837] _finishWithError:(null)

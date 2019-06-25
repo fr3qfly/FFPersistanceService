@@ -1,0 +1,5 @@
+2019-06-25 04:10:41 +0000: Received worker from worker provider: 0x7fa3f5489e70 [0: My Mac (D31E94AA-D08C-5898-8418-3B4FA4B8243C)]
+2019-06-25 04:10:42 +0000: Worker 0x7fa3f5489e70 [83914: My Mac (D31E94AA-D08C-5898-8418-3B4FA4B8243C)] finished bootstrapping
+2019-06-25 04:10:42 +0000: Parallelization disabled; test execution driven by the test process
+2019-06-25 04:10:43 +0000: Worker 0x7fa3f5489e70 [83914: My Mac (D31E94AA-D08C-5898-8418-3B4FA4B8243C)] finished successfully
+2019-06-25 04:10:43 +0000: Finished executing tests (cancelled: No)
