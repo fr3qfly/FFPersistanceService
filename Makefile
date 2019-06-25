@@ -1,11 +1,16 @@
 .PHONY: test-cov
 
+PROJECT = FFPersistanceService.xcodeproj
 MYSCHEME = FFPersistanceService-Package
-DATE = ${date +"%Y%m%d"}
-TARGET = ./TestResults
 
 test-cov:
 	@swift package generate-xcodeproj
-	@xcodebuild -scheme ${MYSCHEME} -derivedDataPath .build/xcode -enableCodeCoverage YES test
-	@cp -r ./.build/xcode/Logs/Test/*.xcresult  ${TARGET}
+# 	slather setup ${PROJECT}
+# 	xcodebuild -scheme ${MYSCHEME} -derivedDataPath ./.build/xcode -enableCodeCoverage YES test # 
+# 	slather coverage --scheme ${MYSCHEME} -x --source-directory ./ --output-directory ./TestResults --build-directory ./.build/xcode ./${PROJECT}
+	slather setup FFPersistanceService.xcodeproj
+	xcodebuild -scheme FFPersistanceService-Package -derivedDataPath ./.build/xcode -enableCodeCoverage YES test
+	slather coverage --scheme FFPersistanceService-Package -x --source-directory ./ --output-directory ./TestResults --build-directory ./.build/xcode ./FFPersistanceService.xcodeproj
 	@rm -r ./.build/xcode
+
+	
