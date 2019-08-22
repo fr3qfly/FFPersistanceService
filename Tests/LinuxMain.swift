@@ -3,5 +3,6 @@ import XCTest
 import PersistanceServiceTests
 
 var tests = [XCTestCaseEntry]()
-tests += PersistanceServiceTests.allTests()
+tests += PersistanceServiceTests.__allTests()
+
 XCTMain(tests)
