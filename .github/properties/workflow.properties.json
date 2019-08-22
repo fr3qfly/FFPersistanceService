@@ -1,0 +1,6 @@
+{
+	"name": "First Action",
+	"description": "Build and test the package",
+	"iconName": "swift",
+	"categories": ["Swift", "SPM"]
+}
