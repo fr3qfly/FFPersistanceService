@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFPersistanceService'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Lightweight object saving solution'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ With the use of `Persistable` protocol you can easily `save`/`load`/`delete` thr
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.3'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.source_files = 'Sources/**/*'
   
   # s.resource_bundles = {
