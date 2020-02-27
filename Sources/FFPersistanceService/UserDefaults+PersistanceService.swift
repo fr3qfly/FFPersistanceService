@@ -9,10 +9,10 @@
 import Foundation
 
 extension UserDefaults: PersistanceService {
-    enum UserDefaultsError: Error {
+    public enum UserDefaultsError: Error {
         case notData
         
-        var localizedDescription: String {
+        public var localizedDescription: String {
             switch self {
             case .notData:
                 return "Stored object wasn't valid Data"
@@ -24,8 +24,11 @@ extension UserDefaults: PersistanceService {
         self.set(data, forKey: key)
     }
     
-    public func get<ObjectType>(_ type: ObjectType.Type, from key: String) throws -> ObjectType where ObjectType : Persistable {
+    public func get<ObjectType>(_ type: ObjectType.Type, from key: String, defaultValue: ObjectType?) throws -> ObjectType where ObjectType : Persistable {
         guard let data = value(forKey: key) as? Data else {
+            if let defaultValue = defaultValue {
+                return defaultValue
+            }
             throw UserDefaultsError.notData
         }
         return try ObjectType.fromPersistableData(data)
@@ -34,6 +37,5 @@ extension UserDefaults: PersistanceService {
     public func delete(_ key: String) throws {
         self.removeObject(forKey: key)
     }
-    
     
 }

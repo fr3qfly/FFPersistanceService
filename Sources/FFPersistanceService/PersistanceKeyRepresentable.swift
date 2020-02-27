@@ -17,8 +17,8 @@ extension PredefinedPersistable where Self: PersistanceKeyRepresentable {
         try save(at: Self.persistanceKey)
     }
 
-    public static func get() throws -> Self {
-        return try get(from: persistanceKey)
+    public static func get(defaultValue: Self? = nil) throws -> Self {
+        return try get(from: persistanceKey, defaultValue: defaultValue)
     }
     
     public static func delete() throws {
@@ -35,8 +35,8 @@ extension Persistable where Self: PersistanceKeyRepresentable {
         try save(at: Self.persistanceKey, on: type)
     }
     
-    public static func get(on type: PersistanceServiceType) throws -> Self{
-        return try get(from: persistanceKey, on: type)
+    public static func get(on type: PersistanceServiceType, defaultValue: Self? = nil) throws -> Self{
+        return try get(from: persistanceKey, on: type, defaultValue: defaultValue)
     }
     
     public static func delete(on type: PersistanceServiceType) throws {

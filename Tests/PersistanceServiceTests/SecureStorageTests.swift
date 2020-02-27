@@ -16,7 +16,8 @@ class SecureStorageTests: XCTestCase {
         ("testSaveOnPersistableType", testSaveOnPersistableType),
         ("testDelete", testDelete),
         ("testDeleteOnPersistableType", testDeleteOnPersistableType),
-        ("testOverwrite", testOverwrite)
+        ("testOverwrite", testOverwrite),
+        ("testGetDefault", testGetDefault)
     ]
     
     let key = "TestKey"
@@ -43,11 +44,11 @@ class SecureStorageTests: XCTestCase {
     }
     
     func testSaveOnPersistableType() throws {
-        var result = try? sut.get(String.self, from: key)
+        var result = try? sut.get(String.self, from: key, defaultValue: nil)
         XCTAssertNil(result)
         let data = "Secret"
         try sut.save(data, at: key)
-        result = try sut.get(String.self, from: key)
+        result = try sut.get(String.self, from: key, defaultValue: nil)
         XCTAssertEqual(result, data)
     }
     
@@ -64,10 +65,10 @@ class SecureStorageTests: XCTestCase {
     func testDeleteOnPersistableType() throws {
         let data = "Secret"
         try sut.save(data, at: key)
-        var result = try? sut.get(String.self, from: key)
+        var result = try? sut.get(String.self, from: key, defaultValue: nil)
         XCTAssertNotNil(result)
         try sut.delete(key)
-        result = try? sut.get(String.self, from: key)
+        result = try? sut.get(String.self, from: key, defaultValue: nil)
         XCTAssertNil(result)
     }
     
@@ -78,5 +79,15 @@ class SecureStorageTests: XCTestCase {
         sut.save(data: newData, key: key)
         let result = try sut.load(key: key)
         XCTAssertEqual(result, newData)
+    }
+    
+    func testGetDefault() {
+        do {
+            let expected = ""
+            let result = try sut.get(String.self, from: "nonExistentKey", defaultValue: expected)
+            XCTAssertEqual(result, expected)
+        } catch {
+            XCTFail(error.localizedDescription)
+        }
     }
 }

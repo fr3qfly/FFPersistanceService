@@ -15,8 +15,8 @@ extension UserDefaultsPersistable {
         try save(at: key, on: .userDefaults)
     }
     
-    public static func get(from key: String) throws -> Self {
-        return try get(from: key, on: .userDefaults)
+    public static func get(from key: String, defaultValue: Self? = nil) throws -> Self {
+        return try get(from: key, on: .userDefaults, defaultValue: defaultValue)
     }
     
     public static func delete(from key: String) throws {

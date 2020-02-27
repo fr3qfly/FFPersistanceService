@@ -28,7 +28,6 @@ class PersistableTests: XCTestCase {
     
     let key = "key"
     
-    var sut: Persistable!
     override func setUp() {
     }
 
@@ -36,13 +35,12 @@ class PersistableTests: XCTestCase {
         try? PersistanceServiceType.userDefaults.persistanceService.delete(key)
         try? PersistanceServiceType.secureStorage.persistanceService.delete(key)
         try? PersistanceServiceType.secureStorage.persistanceService.delete(kKeychainKey)
-        sut = nil
     }
     
     func testStringOnUserDefaults() throws {
         let expected = "Value"
         let sutType = String.self
-        sut = expected
+        let sut = expected
         var result = try? sutType.get(from: key, on: .userDefaults)
         XCTAssertNil(result)
         try sut.save(at: key, on: .userDefaults)
@@ -56,7 +54,7 @@ class PersistableTests: XCTestCase {
     func testMockCodableOnUserDefaults() throws {
         let expected = MockPersistable()
         let sutType = MockPersistable.self
-        sut = expected
+        let sut = expected
         var result = try? sutType.get(from: key, on: .userDefaults)
         XCTAssertNil(result)
         try sut.save(at: key, on: .userDefaults)
@@ -70,7 +68,7 @@ class PersistableTests: XCTestCase {
     func testMockCodableOnKeychain() throws {
         let expected = MockPersistable()
         let sutType = MockPersistable.self
-        sut = expected
+        let sut = expected
         var result = try? sutType.get(from: key, on: .secureStorage)
         XCTAssertNil(result)
         try sut.save(at: key, on: .secureStorage)
@@ -84,7 +82,7 @@ class PersistableTests: XCTestCase {
     func testStringArrayOnKeychain() throws {
         let expected = ["Value1", "Value2"]
         let sutType = [String].self
-        sut = expected
+        let sut = expected
         var result = try? sutType.get(from: key, on: .secureStorage)
         XCTAssertNil(result)
         try sut.save(at: key, on: .secureStorage)
@@ -101,7 +99,7 @@ class PersistableTests: XCTestCase {
     func testIntArrayOnUserDefaults() throws {
         let expected = [1, 2, 3]
         let sutType = [Int].self
-        sut = expected
+        let sut = expected
         var result = try? sutType.get(from: key, on: .userDefaults)
         XCTAssertNil(result)
         try sut.save(at: key, on: .userDefaults)
@@ -154,7 +152,7 @@ class PersistableTests: XCTestCase {
     func testKeychainPersistableOnUserDefaults() throws {
         let expected = MockKeychainPersistable()
         let sutType = MockKeychainPersistable.self
-        sut = expected
+        let sut = expected
         var result = try? sutType.get(from: key, on: .userDefaults)
         XCTAssertNil(result)
         try sut.save(at: key, on: .userDefaults)

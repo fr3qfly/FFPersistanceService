@@ -15,8 +15,8 @@ extension SecurePersistable {
         try save(at: key, on: .secureStorage)
     }
     
-    public static func get(from key: String) throws -> Self {
-        return try get(from: key, on: .secureStorage)
+    public static func get(from key: String, defaultValue: Self? = nil) throws -> Self {
+        return try get(from: key, on: .secureStorage, defaultValue: defaultValue)
     }
     
     public static func delete(from key: String) throws {
