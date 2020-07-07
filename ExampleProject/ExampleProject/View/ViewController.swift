@@ -57,17 +57,22 @@ extension ViewController: ErrorDelegate {
 
 extension ViewController: ViewDelegate {
     func view(_ view: View, didTapButton button: UIButton) {
+        var success = false
         switch button {
         case view.buttons[0]:
-            viewModel.save(view.viewType, value: (view.textFields[0].text, view.textFields[1].text))
+            success = viewModel
+                .save(view.viewType,
+                      value: (view.textFields[0].text,
+                              view.textFields[1].text))
         case view.buttons[1]:
             view.objectLabel.text = viewModel.load(view.viewType)
         case view.buttons[2]:
-            if viewModel.delete(view.viewType) {
-                view.clear()
-            }
+            success = viewModel.delete(view.viewType)
         default:
             viewModel.error = ViewError.buttonNotHandled
+        }
+        if success {
+            view.clear()
         }
         UIView.animate(withDuration: 0.2) {
             view.layoutIfNeeded()

@@ -25,7 +25,7 @@ class ViewModel: ErrorHandler {
     
     enum ViewModelError: MyError {
         case emptyField
-        case notStored(Persistable.Type)
+        case notStored(Any.Type)
         case deleteFailed
         
         var message: String {
@@ -68,22 +68,22 @@ class ViewModel: ErrorHandler {
         view.labels[1].text = secondLabel
     }
     
-    func save(_ viewType: ViewType, value: (String?, String?)) {
-        guard let first = value.0?.notEmpty(), let second = value.1?.notEmpty() else {
-            error = ViewModelError.emptyField.nsError
-            return
-        }
-        let model: (PredefinedPersistable & PersistanceKeyRepresentable)
-        switch viewType {
-        case .userDeafults:
-            model = User(name: first, email: second)
-        case .keychain:
-            model = Credential(username: first, password: second)
-        }
+    func save(_ viewType: ViewType, value: (String?, String?)) -> Bool {
         do {
-            try model.save()
+            guard let first = value.0?.notEmpty(), let second = value.1?.notEmpty() else {
+                throw ViewModelError.emptyField.nsError
+            }
+        
+            switch viewType {
+            case .userDeafults:
+                try User(name: first, email: second).save()
+            case .keychain:
+                try Credential(username: first, password: second).save()
+            }
+            return true
         } catch {
             self.error = error
+            return false
         }
     }
     

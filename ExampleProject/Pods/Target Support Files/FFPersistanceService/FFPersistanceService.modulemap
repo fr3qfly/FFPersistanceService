@@ -1,6 +1,0 @@
-framework module FFPersistanceService {
-  umbrella header "FFPersistanceService-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,7 @@
 		1B36345922579368001F58CE /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B36345822579368001F58CE /* StringExtension.swift */; };
 		1B36345B22579512001F58CE /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B36345A22579512001F58CE /* ErrorExtension.swift */; };
 		1B36345D2258380D001F58CE /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B36345C2258380D001F58CE /* MyError.swift */; };
-		8CF14BF2A64E45CFF95B8249 /* Pods_ExampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38E1577FFBC340DD05CDF0 /* Pods_ExampleProject.framework */; };
+		1B872C6B24B486D00057760E /* FFPersistanceService in Frameworks */ = {isa = PBXBuildFile; productRef = 1B872C6A24B486D00057760E /* FFPersistanceService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,9 +54,7 @@
 		1B36345822579368001F58CE /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1B36345A22579512001F58CE /* ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
 		1B36345C2258380D001F58CE /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
-		8C38E1577FFBC340DD05CDF0 /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1C491E3AE81FA05CB09A302 /* Pods-ExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.debug.xcconfig"; path = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
-		E230AF28B19DA6A9010DDE53 /* Pods-ExampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.release.xcconfig"; path = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject.release.xcconfig"; sourceTree = "<group>"; };
+		1B872C6824B486C00057760E /* FFPersistanceService */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FFPersistanceService; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF14BF2A64E45CFF95B8249 /* Pods_ExampleProject.framework in Frameworks */,
+				1B872C6B24B486D00057760E /* FFPersistanceService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +72,10 @@
 		1B36340322576A62001F58CE = {
 			isa = PBXGroup;
 			children = (
+				1B872C6824B486C00057760E /* FFPersistanceService */,
 				1B36340E22576A62001F58CE /* ExampleProject */,
 				1B36340D22576A62001F58CE /* Products */,
-				35A0C574E9B1D45866151DBC /* Pods */,
-				931DDF62B12D986E008F111F /* Frameworks */,
+				1B872C6924B486D00057760E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,19 +149,9 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		35A0C574E9B1D45866151DBC /* Pods */ = {
+		1B872C6924B486D00057760E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C1C491E3AE81FA05CB09A302 /* Pods-ExampleProject.debug.xcconfig */,
-				E230AF28B19DA6A9010DDE53 /* Pods-ExampleProject.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		931DDF62B12D986E008F111F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8C38E1577FFBC340DD05CDF0 /* Pods_ExampleProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,18 +163,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B36341E22576A63001F58CE /* Build configuration list for PBXNativeTarget "ExampleProject" */;
 			buildPhases = (
-				0D81941084EBA8114837BA29 /* [CP] Check Pods Manifest.lock */,
 				1B36340822576A62001F58CE /* Sources */,
 				1B36340922576A62001F58CE /* Frameworks */,
 				1B36340A22576A62001F58CE /* Resources */,
 				1B36343222576AA6001F58CE /* Embed Frameworks */,
-				B2091A0ADB5464D35E564163 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ExampleProject;
+			packageProductDependencies = (
+				1B872C6A24B486D00057760E /* FFPersistanceService */,
+			);
 			productName = ExampleProject;
 			productReference = 1B36340C22576A62001F58CE /* ExampleProject.app */;
 			productType = "com.apple.product-type.application";
@@ -198,7 +187,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					1B36340B22576A62001F58CE = {
 						CreatedOnToolsVersion = 10.2;
@@ -236,53 +225,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0D81941084EBA8114837BA29 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ExampleProject-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2091A0ADB5464D35E564163 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleProject/Pods-ExampleProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FFPersistanceService/FFPersistanceService.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFPersistanceService.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleProject/Pods-ExampleProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B36340822576A62001F58CE /* Sources */ = {
@@ -350,6 +292,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -411,6 +354,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -442,7 +386,6 @@
 		};
 		1B36341F22576A63001F58CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1C491E3AE81FA05CB09A302 /* Pods-ExampleProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,7 +403,6 @@
 		};
 		1B36342022576A63001F58CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E230AF28B19DA6A9010DDE53 /* Pods-ExampleProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +440,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B872C6A24B486D00057760E /* FFPersistanceService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FFPersistanceService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B36340422576A62001F58CE /* Project object */;
 }
