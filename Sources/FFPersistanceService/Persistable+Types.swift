@@ -21,11 +21,11 @@ extension Persistable where Self: Codable {
 }
 
 extension String: Persistable {
-    public enum PersistableError: Error {
+    public enum PersistableError: LocalizedError {
         case notData(String)
         case notString(Data)
         
-        var localizedDescription: String {
+        public var errorDescription: String? {
             switch self {
             case .notData(let string):
                 return "Couldn't convert \(string) to `Data`"

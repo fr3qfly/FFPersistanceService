@@ -5,3 +5,7 @@
 *.zip
 
 FFPersistanceService\.xcodeproj/project\.xcworkspace/xcuserdata/fr3qfly\.xcuserdatad/
+
+.swiftpm/xcode/package.xcworkspace/xcuserdata/fr3qfly.xcuserdatad/UserInterfaceState.xcuserstate
+
+.swiftpm/xcode/package.xcworkspace/xcuserdata/fr3qfly.xcuserdatad/

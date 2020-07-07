@@ -10,15 +10,15 @@ import FFPersistanceService
 
 
 struct MockPersistable: Codable, Equatable, Persistable {
-    let property = "Property"
+    var property = "Property"
 }
 
 struct MockUserDefaultsPersistable: Codable, Equatable, UserDefaultsPersistable {
-    let property = "Property"
+    var property = "Property"
 }
 
 struct MockKeychainPersistable: Codable, Equatable, SecurePersistable {
-    let property = "Property"
+    var property = "Property"
 }
 
 extension MockKeychainPersistable: PersistanceKeyRepresentable {

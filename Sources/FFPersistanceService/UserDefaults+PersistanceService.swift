@@ -9,10 +9,10 @@
 import Foundation
 
 extension UserDefaults: PersistanceService {
-    public enum UserDefaultsError: Error {
+    public enum UserDefaultsError: LocalizedError {
         case notData
         
-        public var localizedDescription: String {
+        public var errorDescription: String? {
             switch self {
             case .notData:
                 return "Stored object wasn't valid Data"

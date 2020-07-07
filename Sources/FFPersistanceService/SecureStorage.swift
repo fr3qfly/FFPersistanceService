@@ -19,10 +19,10 @@ let kSecReturnDataValue = NSString(format: kSecReturnData)
 let kSecMatchLimitOneValue = NSString(format: kSecMatchLimitOne)
 
 class SecureStorage: NSObject {
-    enum KeychainError: Error {
+    enum KeychainError: LocalizedError {
         case dataRetrieval(String)
         
-        var localizedDescription: String {
+        var errorDescription: String? {
             switch self {
             case .dataRetrieval(let status):
                 return "Nothing was retrieved from the keychain. Status code \(status)"
